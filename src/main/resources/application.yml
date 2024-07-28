@@ -17,7 +17,7 @@ minio:
   secret:
     key: minioadmin
   bucket:
-    name: rhythmraid
+    name: jmatcher
 springdoc:
   api-docs:
     path: /api-docs
