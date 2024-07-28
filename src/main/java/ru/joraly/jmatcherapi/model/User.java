@@ -17,28 +17,20 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false)
     private String email;
 
-    @Column(nullable = false)
     private String password;
 
-    @Column(nullable = false)
     private int age;
 
-    @Column(nullable = false)
     private String gender;
 
-    @Column(nullable = false)
     private String location;
 
-    @Column(nullable = false)
     private String bio;
 
-    @Column(nullable = false)
     private String photo;
 
     @OneToMany(mappedBy = "user1")
