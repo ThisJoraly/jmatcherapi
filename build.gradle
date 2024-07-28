@@ -23,20 +23,31 @@ repositories {
     mavenCentral()
 }
 
+// Lombok
+dependencies {
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+}
+
+// Mapstruct
+dependencies {
+    implementation 'org.mapstruct:mapstruct:1.6.0.Beta1'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.0.Beta1'
+}
+
+// Spring
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-devtools'
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
     implementation 'org.liquibase:liquibase-core'
-    implementation 'org.mapstruct.extensions.spring:mapstruct-spring-annotations:1.1.1'
-    compileOnly 'org.projectlombok:lombok'
 //    developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
     runtimeOnly 'org.postgresql:postgresql'
-    annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'io.minio:minio:8.5.11'
+
 
 }
 
